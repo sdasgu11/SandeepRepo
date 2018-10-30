@@ -1,0 +1,39 @@
+*Basics of Git  Branching*
+by Franklin Dawes
+
+Creating a New Branch: _git branch <branch_name>_
+
+Switching to a Branch: _git checkout <branch_name>_
+
+*ON YOUR BRANCH => Coding…Coding…aaaand Time to Commit*
+_git add ._ 
+_git commit_
+_git push origin <branch_name>_
+
+*You can push and create a pull request to merge your changes into the master branch*
+
+I recommend this route :point_up::skin-tone-5:
+
+*IF YOU ARE UNABLE to merge your pull request THEN….*
+
+_1. git checkout master_
+_2. git pull_
+
+_3. git checkout <your_branch_name>_
+_4. git merge master_
+_5. manually fix conflicts_
+
+_6. git add .
+_7. git commit 
+_8. git push origin <your_branch_name>_
+
+*Now Go To GitHub and Create a New Pull Request*
+_Merge your branch into the master through the pull request method._
+
+_You can delete your branch from GitHub *after* you’ve merged it into the master branch successfully. (They give you that option after you merge)_
+
+*Go Back To Your Terminal*
+1. _git checkout master_
+2. _git pull origin master_
+3. _git branch -d <your_branch_name>_ (delete branch)
+4. *GO BACK TO THE TOP OF THIS and REPEAT*
